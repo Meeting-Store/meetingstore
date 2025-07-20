@@ -1,4 +1,218 @@
-dsdefsfdsdfsdfsdfsdfgdfgdgfdfgdf
-ghfgghcf
-hjghghfgh
-hgfghfhggfhfjt
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Store</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            color: #fff;
+            padding: 0 40px;
+            height: 60px;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin-left: 30px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #f39c12;
+        }
+        /* Banner */
+        .banner {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px 80px 20px;
+            position: relative;
+        }
+        .banner h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 8px #0008;
+        }
+        .banner p {
+            font-size: 1.3em;
+            text-shadow: 0 2px 8px #0008;
+        }
+        /* Products */
+        .section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 2px 8px #0001;
+            overflow: hidden;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px #0002;
+        }
+        .product-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+        .product-card p {
+            color: #888;
+            margin-bottom: 15px;
+        }
+        /* Articles */
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .article-card {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 2px 8px #0001;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+        .article-card:hover {
+            box-shadow: 0 4px 16px #0002;
+        }
+        .article-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        .article-card .content {
+            padding: 15px;
+        }
+        .article-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+        }
+        .article-card p {
+            color: #666;
+            font-size: 0.97em;
+        }
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px 15px 10px;
+            margin-top: 40px;
+        }
+        @media (max-width: 900px) {
+            .products, .articles { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MeetingStore</div>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="#">สินค้า</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>ยินดีต้อนรับสู่ MeetingStore</h1>
+        <p>ร้านค้าออนไลน์สำหรับอุปกรณ์ประชุมและสำนักงานครบวงจร</p>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+        <div class="section-title">สินค้าแนะนำ</div>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="สินค้า 1">
+                <h3>ไมโครโฟนประชุม</h3>
+                <p>เสียงคมชัด ใช้งานง่าย เหมาะสำหรับห้องประชุมทุกขนาด</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="สินค้า 2">
+                <h3>โปรเจคเตอร์</h3>
+                <p>ภาพคมชัด รองรับการเชื่อมต่อหลากหลาย</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="สินค้า 3">
+                <h3>ลำโพงไร้สาย</h3>
+                <p>เสียงดังฟังชัด พกพาสะดวก เหมาะกับทุกโอกาส</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section" id="articles">
+        <div class="section-title">บทความล่าสุด</div>
+        <div class="articles">
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="บทความ 1">
+                <div class="content">
+                    <h4>5 เทคนิคการประชุมให้มีประสิทธิภาพ</h4>
+                    <p>เรียนรู้วิธีการประชุมที่ช่วยให้ทีมของคุณทำงานได้อย่างราบรื่นและมีประสิทธิผลมากขึ้น</p>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="บทความ 2">
+                <div class="content">
+                    <h4>เลือกอุปกรณ์ประชุมอย่างไรให้เหมาะกับองค์กร</h4>
+                    <p>แนะนำการเลือกซื้ออุปกรณ์ประชุมที่ตอบโจทย์การใช้งานในแต่ละองค์กร</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2025 MeetingStore. สงวนลิขสิทธิ์.</div>
+        <div>ติดต่อ: info@meetingstore.com | โทร: 02-123-4567</div>
+    </footer>
+</body>
+</html>

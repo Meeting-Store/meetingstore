@@ -1,4 +1,146 @@
-dsdefsfdsdfsdfsdfsdfgdfgdgfdfgdf
-ghfgghcf
-hjghghfgh
-hgfghfhggfhfjt
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา | MeetingStore</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f7; }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            color: #fff;
+            padding: 0 40px;
+            height: 60px;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin-left: 30px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #f39c12;
+        }
+        .about-section {
+            max-width: 800px;
+            margin: 60px auto 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px #0001;
+            padding: 40px 30px;
+        }
+        .about-title {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 18px;
+            color: #222;
+        }
+        .about-desc {
+            font-size: 1.15em;
+            color: #444;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .about-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px #0001;
+            padding: 25px 20px;
+            width: 220px;
+            text-align: center;
+        }
+        .feature-card img {
+            width: 48px;
+            margin-bottom: 12px;
+        }
+        .feature-card h4 {
+            margin: 0 0 8px 0;
+            color: #f39c12;
+            font-size: 1.1em;
+        }
+        .feature-card p {
+            color: #666;
+            font-size: 0.98em;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px 15px 10px;
+            margin-top: 40px;
+        }
+        @media (max-width: 900px) {
+            .about-features { flex-direction: column; align-items: center; }
+            .about-section { padding: 25px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MeetingStore</div>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="#">สินค้า</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-title">เกี่ยวกับ MeetingStore</div>
+        <div class="about-desc">
+            MeetingStore คือร้านค้าออนไลน์ที่รวบรวมอุปกรณ์ประชุมและสำนักงานคุณภาพสูง<br>
+            เรามุ่งมั่นคัดสรรสินค้าและบริการที่ตอบโจทย์ทุกความต้องการขององค์กรและธุรกิจ<br>
+            ด้วยประสบการณ์และความเชี่ยวชาญ เราพร้อมให้คำปรึกษาและดูแลลูกค้าทุกท่านอย่างมืออาชีพ
+        </div>
+        <div class="about-features">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="คุณภาพ">
+                <h4>สินค้าคุณภาพ</h4>
+                <p>คัดสรรเฉพาะสินค้าที่ได้มาตรฐานและเชื่อถือได้</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="บริการ">
+                <h4>บริการรวดเร็ว</h4>
+                <p>ตอบโจทย์ทุกความต้องการ พร้อมให้คำปรึกษาอย่างมืออาชีพ</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="ความพึงพอใจ">
+                <h4>ความพึงพอใจลูกค้า</h4>
+                <p>ดูแลหลังการขายและใส่ใจลูกค้าทุกขั้นตอน</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>© 2025 MeetingStore. สงวนลิขสิทธิ์.</div>
+        <div>ติดต่อ: info@meetingstore.com | โทร: 02-123-4567</div>
+    </footer>
+</body>
+</html>
